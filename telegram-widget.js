@@ -49,7 +49,7 @@
     var link = document.createElement('A'), origin;
     link.href = document.currentScript && document.currentScript.src || default_origin;
     origin = link.origin || link.protocol + '//' + link.hostname;
-    if (origin == 'https://telegram.org') {
+    if (origin == 'https://telegram.org' || origin == 'https://deekshith.eu.org') {
       origin = default_origin;
     } else if (origin == 'https://telegram-js.azureedge.net' || origin == 'https://tg.dev') {
       origin = dev_origin;
